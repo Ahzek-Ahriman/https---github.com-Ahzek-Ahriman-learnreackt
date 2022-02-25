@@ -11,7 +11,7 @@ body {
     align-items: center;
     background: rgba(45, 176, 224, 1);
     background: -moz-linear-gradient(45deg, rgba(45, 176, 224, 1) 0%, rgba(96,40,168,1) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(45, 176, 224, 1)), color-stop(100%, rgba(96,40,168,1)));
+    background: -webkit-linear-gradient(left bottom, right top);
     background: -webkit-linear-gradient(45deg,rgba(45, 176, 224, 1) 0%, rgba(96,40,168,1) 100%);
     background: -o-linear-gradient(45deg,rgba(45, 176, 224, 1) 0%, rgba(96,40,168,1) 100%);
     background: -ms-linear-gradient(45deg,rgba(45, 176, 224, 1) 0%, rgba(96,40,168,1) 100%);
@@ -29,10 +29,11 @@ body {
 .info {
     height: 55vh;
     background-size: cover;
-    background: url("img/bg.jpg") center center no-repeat;
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     opacity:0.8;
     -moz-opacity:0.8;
-    filter: alpha(opacity=80) black;
     -khtml-opacity: 0.8;
     background-color:#000;
     
@@ -42,6 +43,7 @@ body {
     text-align: center;
     color: #000;
 }
+
 
 .form{
     height: 55vh;
